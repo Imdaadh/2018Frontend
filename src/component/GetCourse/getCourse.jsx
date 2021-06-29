@@ -10,7 +10,7 @@ import axios from 'axios';
         }
     
         componentDidMount() {
-            axios.get('https://afpaper2018.herokuapp.com/course/getCourses').
+            axios.get('https://afpaper2018.herokuapp.com/course/getCourse').
             then(res => {
                 const course = res.data.getCourse;
                 console.log(course);
