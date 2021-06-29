@@ -38,7 +38,7 @@ this.setState({ selectedSubjects: e ? e.map(item => item.value) : [] });
 
 
 componentDidMount() {
-    axios.get('http://localhost:5000/subject/getSubjects').then(response => {
+    axios.get('https://afpaper2018.herokuapp.com/subject/getSubjects').then(response => {
        this.setState({subjects: response.data}, ()=> {
        console.log('subjects',this.state.subjects);
        let data = []; //options [] are captured
@@ -65,7 +65,7 @@ lecturer_in_Charge: this.state.lecture,
 subjects: this.state.selectedSubjects
 };
 console.log('DATA TO SEND', course)
-axios.post('http://localhost:5000/course/Course', course)
+axios.post('https://afpaper2018.herokuapp.com/course/Course', course)
 .then(response => {
    alert('Course Data successfully inserted')
    })

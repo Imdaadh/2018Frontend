@@ -10,7 +10,7 @@ import axios from 'axios';
         }
     
         componentDidMount() {
-            axios.get('http://localhost:5000/course/getCourses').
+            axios.get('https://afpaper2018.herokuapp.com/course/getCourses').
             then(res => {
                 const course = res.data.getCourse;
                 console.log(course);
@@ -19,7 +19,7 @@ import axios from 'axios';
         }
     
         deleteCourses = (id) => {
-            axios.delete(`http://localhost:5000/course/deleteCourse/${id}`).
+            axios.delete(`https://afpaper2018.herokuapp.com/course/deleteCourse/${id}`).
             then(res =>{
                 if(res.data.success){
                     alert(res.data.message);
