@@ -41,7 +41,8 @@ import axios from 'axios';
                             <th>Pass Mark</th>
                             <th>Lecturer In Charge</th>
                             <th>Action</th>
-                            console.log("Hello");
+                         
+                            
     
                         </tr>
                         </thead>
