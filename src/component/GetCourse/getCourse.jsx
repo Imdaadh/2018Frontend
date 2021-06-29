@@ -10,7 +10,7 @@ import axios from 'axios';
         }
     
         componentDidMount() {
-            axios.get('https://afpaper2018.herokuapp.com/course/getCourse').
+            axios.get('https://afpaper2018.herokuapp.com/course/getCourses').
             then(res => {
                 const course = res.data.getCourse;
                 console.log(course);
@@ -41,6 +41,7 @@ import axios from 'axios';
                             <th>Pass Mark</th>
                             <th>Lecturer In Charge</th>
                             <th>Action</th>
+                            console.log("Hello");
     
                         </tr>
                         </thead>
